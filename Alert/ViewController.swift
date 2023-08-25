@@ -17,11 +17,12 @@ class ViewController: UIViewController {
     }
 
     @IBAction private func buttonTap(){
-        let alert = UIAlertController(title: "Do the thing?", message: "let us know if you want to di thing", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Do the thing?", message: "Let us know if you want to do the thing", preferredStyle: .alert)
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel)
         let okAction = UIAlertAction(title: "Ok", style: .default)
         alert.addAction(cancelAction)
         alert.addAction(okAction)
+        alert.preferredAction = okAction
         present(alert, animated: true)
     }
 
